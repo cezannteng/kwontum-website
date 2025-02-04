@@ -1,0 +1,10 @@
+.main {
+    background-color: #FFFFFF;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.main-image {
+    max-width: 100%;
+    height: auto;
+}
