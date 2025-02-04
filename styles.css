@@ -6,7 +6,6 @@
 
 header.main {
     position: relative;
-    background: url('images/wall-facing-carpark.png') center center/cover no-repeat;
     height: 100vh; /* Full viewport height on desktops */
     display: flex;
     align-items: center;
