@@ -3,10 +3,162 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Kwontum - About Us</title>
+  <title>Kwontum - Innovation Meets Passion</title>
+  <!-- Internal CSS for demonstration. You can also use an external styles.css -->
+  <style>
+    /* General Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      color: #333;
+      line-height: 1.6;
+    }
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+    /* Header / Hero Section */
+    header {
+      background: url('images/hero.jpg') center center/cover no-repeat;
+      color: #fff;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      position: relative;
+    }
+    /* Optional dark overlay for better text readability */
+    header::after {
+      content: "";
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      z-index: 0;
+    }
+    header .content {
+      position: relative;
+      z-index: 1;
+      max-width: 800px;
+      padding: 0 20px;
+    }
+    header h1 {
+      font-size: 4rem;
+      margin-bottom: 20px;
+    }
+    header p {
+      font-size: 1.2rem;
+    }
+    /* Sections */
+    section {
+      padding: 60px 20px;
+      text-align: center;
+    }
+    section h2 {
+      font-size: 2.5rem;
+      color: #007BFF;
+      margin-bottom: 20px;
+    }
+    .container {
+      max-width: 800px;
+      margin: auto;
+    }
+    /* Button Styles */
+    .button {
+      display: inline-block;
+      background-color: #25D366; /* WhatsApp green */
+      color: #fff;
+      padding: 15px 25px;
+      border-radius: 5px;
+      font-size: 1rem;
+      margin: 10px 0;
+      transition: background 0.3s;
+    }
+    .button:hover {
+      background-color: #1ebe5d;
+    }
+    /* QR Code Section */
+    .qr-code img {
+      width: 200px;
+      height: 200px;
+      margin: 20px auto;
+      display: block;
+    }
+    /* Footer */
+    footer {
+      background: #333;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+    }
+  </style>
 </head>
 <body>
-  <h1>Welcome to Kwontum!</h1>
-  <p>This is your homepage. Replace this with your actual content.</p>
+
+  <!-- Hero / Landing Section -->
+  <header>
+    <div class="content">
+      <h1>Kwontum</h1>
+      <p>Innovation meets passion. Discover what we stand for.</p>
+    </div>
+  </header>
+
+  <!-- About Section -->
+  <section id="about">
+    <div class="container">
+      <h2>About Kwontum</h2>
+      <p>
+        Founded on the principles of innovation and excellence, Kwontum began with a vision to revolutionize the tech industry. Our mission is to empower individuals and communities by providing cutting-edge solutions and fostering a culture of continuous learning and growth.
+      </p>
+      <p>
+        At Kwontum, we stand for quality, creativity, and integrity. We are dedicated to pushing the boundaries of what is possible and ensuring that technology serves as a bridge to a better future.
+      </p>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <div class="container">
+      <h2>Contact Us</h2>
+      <p>
+        Have questions or need more information? Chat with us directly on WhatsApp.
+      </p>
+      <!-- Replace the phone number and message in the URL below as needed -->
+      <a class="button" href="https://wa.me/1234567890?text=Hi%20Kwontum,%20I%20would%20like%20to%20enquire%20about%20a%20trial%20class." target="_blank">
+        Chat on WhatsApp
+      </a>
+    </div>
+  </section>
+
+  <!-- Trial Booking Section -->
+  <section id="trial-booking">
+    <div class="container">
+      <h2>Book a Trial Class</h2>
+      <p>
+        Experience Kwontum firsthand by booking a trial class. Simply scan the QR code or click the button below to fill out our booking form.
+      </p>
+      <div class="qr-code">
+        <!-- Replace 'your_google_form_id' with your actual Google Form ID or URL-encoded link -->
+        <a href="https://docs.google.com/forms/d/e/your_google_form_id/viewform" target="_blank">
+          <img src="https://chart.googleapis.com/chart?chs=200x200&cht=qr&chl=https%3A%2F%2Fdocs.google.com%2Fforms%2Fd%2Fe%2Fyour_google_form_id%2Fviewform" alt="Book a Trial Class QR Code">
+        </a>
+        <a class="button" href="https://docs.google.com/forms/d/e/your_google_form_id/viewform" target="_blank">
+          Book Now
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer>
+    <p>&copy; 2025 Kwontum. All rights reserved.</p>
+  </footer>
+
 </body>
 </html>
