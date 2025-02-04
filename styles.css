@@ -1,3 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header.main {
+    position: relative;
+    background: url('images/wall-facing-carpark.png') center center/cover no-repeat;
+    height: 100vh; /* Full viewport height on desktops */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+@media screen and (max-width: 768px) {
+    .header.main {
+        height: 60vh; /* Reduce header height on mobile */
+    }
+}
+
+
+
 .main {
     background-color: #FFFFFF;
     padding: 50px 20px;
